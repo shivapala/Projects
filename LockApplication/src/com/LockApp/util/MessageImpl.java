@@ -8,7 +8,7 @@ public class MessageImpl implements Message {
 
 	public void displayExitMsg()
 	{
-		System.out.println("Existing LockApplication");
+		System.out.println("Existing LockerApplication");
 		
 		
 	}

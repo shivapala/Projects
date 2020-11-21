@@ -171,7 +171,7 @@ public class LockApplication {
 				System.out.println("Got Error while processing the Application: "+ex.getMessage());
 			ex.printStackTrace();
 			}
-		System.out.println("End of Lock Application , Rerun the Application");
+		System.out.println("End of Locker Application , Rerun the Application");
 			
 			
 	}
