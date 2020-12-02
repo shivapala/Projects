@@ -116,13 +116,13 @@ public class LockApplication {
 		case "2":
 			resetOptions();
 			if(!ops.deleteFile(getInput("Enter File Name to Delete"),LockAppConstansts.Directory))
-			System.out.println("No file exist to delete"); 
+			System.out.println("No file exist to delete, Please enter exact file Name/View Files from Main Menu "); 
 			return true;
 	
 		case "3":
 			resetOptions();
 			if(!ops.searchFile(getInput("Enter Filename to Search"),LockAppConstansts.Directory))
-				System.out.println("File not Found");
+				System.out.println("File not Found in LockedMe App");
 		return true;
 
 		default:
@@ -147,10 +147,7 @@ public class LockApplication {
 	
 	public void runApplication()
 	{
-		System.out.println("******** Welcome to Company Lockers Pvt. Ltd ********");
-		System.out.println("******** Developed by Shiva Kumar Pala********");
-		System.out.println("========================================================");
-		System.out.println("\t******Select below options to Navigate LockApp********");
+		
 		String readOption="";
 			msg.displayMainMsg();
 			

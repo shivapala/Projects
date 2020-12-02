@@ -41,6 +41,13 @@ public class BusinessOperationsImpl implements BusinessOperations {
 		
 		File fin=new File(LockAppConstansts.Directory.concat(File.separator).concat(fileName));
 		try {
+			
+			if(fin.exists())
+				
+			{
+				System.out.println("File Exist already "+fin.getName()+",Choose another file name");
+			}else
+			{
 			if(fin.createNewFile()) {
 				System.out.println(fin.getName()+" File got created Sucessfully");
 				
@@ -48,6 +55,7 @@ public class BusinessOperationsImpl implements BusinessOperations {
 				
 				
 			
+			}
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
