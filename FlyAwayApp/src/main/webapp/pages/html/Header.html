@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 5px;
+  text-align: center;
+  background: DodgerBlue;
+  color: white;
+  font-size: 10px;
+}
+
+/* Page Content */
+.content {padding:10px;}
+
+.navbar {
+  width: 100%;
+  background-color: #17ECEC;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #34CCFF;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>FlyAway AirLines Booking Portal</h2>
+   <p>....SimplyFly</p>
+</div>
+<div class="navbar">
+  <a class="active" href="pages/html/MainPage.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="/pages/Booking.jsp"><i class="fa fa-fw fa-search"></i>SearchTickets</a> 
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+
+</body>
+</html>

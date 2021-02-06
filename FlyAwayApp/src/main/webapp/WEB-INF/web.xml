@@ -1,0 +1,55 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<display-name>Login</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.servlets.LoginSvc</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LocationsSV</servlet-name>
+		<display-name>LocationsSV</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.servlets.LocationsSV</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FlightResults</servlet-name>
+		<display-name>FlightResults</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.servlets.FlightResults</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookTickets</servlet-name>
+		<display-name>BookTickets</display-name>
+		<description></description>
+		<servlet-class>com.flyaway.servlets.BookTickets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LocationsSV</servlet-name>
+		<url-pattern>/LocationsSV</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FlightResults</servlet-name>
+		<url-pattern>/FlightResults</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookTickets</servlet-name>
+		<url-pattern>/BookTickets</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<!--  <welcome-file>LoginPage.html</welcome-file> -->
+		<welcome-file>/pages/html/MainPage.html</welcome-file>
+		<!-- <welcome-file>index.jsp</welcome-file> -->
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

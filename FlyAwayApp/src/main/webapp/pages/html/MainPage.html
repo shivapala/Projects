@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+/* Header/Logo Title */
+.header {
+  padding: 15px;
+  text-align: center;
+  background: DodgerBlue;
+  color: white;
+  font-size: 10px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:DodgerBlue;
+   color: white;
+   text-align: center;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 40px 40px;
+  font-size: 20px;
+  cursor: pointer;
+ 
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #17ECEC;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color:  #17ECEC;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #34CCFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h2>FlyAway AirLines Booking Portal</h2>
+  <p>....SimplyFly</p>
+</div>
+<div class="footer">
+  <p>Developed By Shiva Pala</p>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Login')">Employee-Login</button>
+  <button class="tablinks" onclick="openCity(event, 'BookTickets')">BookTickets</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3>About....</h3>
+  <p>FlyAway Airlines are the best Airlines in the world.</p>
+</div>
+
+<div id="Login" class="tabcontent">
+  <h3>Portal staff Operations</h3>
+  <p></p> 
+  <form action="Login" method="post">
+		UserName : <input type="text" name="UserName" /> Password : <input
+			type="text" name="Password" /> 
+			<input type="submit" name="Login" />
+	</form>
+</div>
+
+<div id="BookTickets" class="tabcontent">
+ <button class="btn"><i class="fa fa-home"></i> Login</button>
+<button class="btn" onclick="book()"><i class="fa fa-bars"></i> Guest</button>
+<a href="#"><i class="fa fa-search"></i></a>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+function book()
+{
+
+window.location.href = "pages/jsp/Booking.jsp";
+	
+	}
+</script>
+   
+</body>
+</html> 
